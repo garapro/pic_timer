@@ -6,7 +6,7 @@
   </DisplayManager>
   <General>
     <HarmonyPath dnOrder="0" path="C:/microchip/harmony/v2_06"/>
-    <Processor dnOrder="1" name="PIC32MZ2048ECG144"/>
+    <Processor dnOrder="1" name="PIC32MZ2048EFG144"/>
     <Board dnOrder="2" name=" "/>
     <ForceOptimization dnOrder="3" flag="true"/>
     <MergeStrategy dnOrder="4" flag="USER_ALL"/>
@@ -138,12 +138,12 @@
       <Template dnOrder="0">
         <Name dnOrder="0">sys_ports_static.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default/framework/system/ports/src</Path>
-        <Checksum dnOrder="2">63F2F96E400660FA6DF75D70C340EA2C</Checksum>
+        <Checksum dnOrder="2">9F9431647873BECD2024DFA5B4B7E10C</Checksum>
       </Template>
       <Template dnOrder="1">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">54FA5A8A7D178ECBFE359B6941EAB1A9</Checksum>
+        <Checksum dnOrder="2">639131DC0284F0F715F735AAE4E6E468</Checksum>
       </Template>
       <Template dnOrder="2">
         <Name dnOrder="0">sys_devcon_cache.h</Name>
@@ -205,7 +205,7 @@
       <Template dnOrder="14">
         <Name dnOrder="0">system_config.h</Name>
         <Path dnOrder="1">Header&amp;#160;Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">2C2B93B903015F0A2CFAC8203BD3F07F</Checksum>
+        <Checksum dnOrder="2">97C822A92A73027F3A3FEE2A691554E0</Checksum>
       </Template>
       <Template dnOrder="15">
         <Name dnOrder="0">system_interrupt.c</Name>

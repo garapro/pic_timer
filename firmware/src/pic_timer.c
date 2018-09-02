@@ -96,7 +96,9 @@ PIC_TIMER_DATA pic_timerData;
 
 /* TODO:  Add any necessary local functions.
 */
-
+/*** add ***/
+static void callbackTimer( uintptr_t context, uint32_t currTick );
+/*** add ***/
 
 // *****************************************************************************
 // *****************************************************************************
@@ -143,7 +145,12 @@ void PIC_TIMER_Tasks ( void )
         {
             bool appInitialized = true;
        
-        
+            /*** add ***/
+            pic_timerData.ledStatus = false;
+            
+            // 2ïbä‘äuÇÃé¸ä˙É^ÉCÉ}Å[ê›íË
+            pic_timerData.tmrHandle = SYS_TMR_ObjectCreate( 2000, NULL, callbackTimer, SYS_TMR_FLAG_PERIODIC );
+            /*** add ***/
             if (appInitialized)
             {
             
@@ -170,7 +177,23 @@ void PIC_TIMER_Tasks ( void )
     }
 }
 
- 
+/*** add ***/
+static void callbackTimer( uintptr_t context, uint32_t currTick ){
+    // 2ïbä‘äuÇ≈åƒÇŒÇÍÇÈ
+    if(pic_timerData.ledStatus){
+        // LED ON èÛë‘
+        LEDOff();
+        pic_timerData.ledStatus = false;
+    }
+    else
+    {
+        // LED OFF èÛë‘
+        LEDOn();
+        pic_timerData.ledStatus = true;
+    }
+    return;
+}
+/*** add ***/
 
 /*******************************************************************************
  End of File

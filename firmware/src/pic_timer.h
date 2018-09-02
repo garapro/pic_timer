@@ -114,6 +114,10 @@ typedef struct
     PIC_TIMER_STATES state;
 
     /* TODO: Define any additional data used by the application. */
+    /*** add ***/
+    SYS_TMR_HANDLE tmrHandle;                   // タイマーハンドル
+    bool ledStatus;                             // led状態 false:OFF/true:ON
+    /*** add ***/
 
 } PIC_TIMER_DATA;
 

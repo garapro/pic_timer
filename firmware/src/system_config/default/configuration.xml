@@ -143,7 +143,7 @@
       <Template dnOrder="1">
         <Name dnOrder="0">system_init.c</Name>
         <Path dnOrder="1">Source&amp;#160;Files/app/system_config/default</Path>
-        <Checksum dnOrder="2">639131DC0284F0F715F735AAE4E6E468</Checksum>
+        <Checksum dnOrder="2">B13A1185ADF6B0176500485830C86FDC</Checksum>
       </Template>
       <Template dnOrder="2">
         <Name dnOrder="0">sys_devcon_cache.h</Name>
